@@ -15,7 +15,7 @@ pip install -r requirements.txt .
 The folowing command will train the MatBERT-CNN model on the perovskite dataset using default parameters
 
 ```
-python train.py -dv gpu:0 -ds pero800 -ml matbert
+python train.py -dv gpu:0 -ds pero800 -ml matbert -ne 8
 ```
 
 Additional parameters can be specified.
@@ -68,5 +68,5 @@ optional arguments:
 To train on custom annotated datasets, the `train.py` script has a dictionary `data_files` where additional datasets can be specified. Similarly, alternative pre-trained models can be used by modifying the `model_files` dictionary.
 
 For prediction, the `predict` function contained within `predict.py` can be used. An example that was used internally can be found in the `predict_script.py` file. Furthermore, an example utilizing MongoDB can be found in the `predict_mongo.py` script. Note that these two examples will need to be edited for your specific needs to be usable.
-
+This work mainly refer to https://github.com/CederGroupHub/MatBERT_NER. The bert=model.py has been modified.
 # License
