@@ -1,21 +1,21 @@
-# MatBERT NER
+# MatBERT-CNN NER
 
 A framework for materials science NER using the HuggingFace Transformers NLP Toolkit.
 
 # Installation
 
 ```git
-git clone https://github.com/walkernr/MatBERT_NER.git MatBERT_NER
+git clone https://github.com/Xin-nicetry/matbert-cnn.git
 cd MatBERT_NER
 pip install -r requirements.txt .
 ```
 
 # Example Usage
 
-The folowing command will train the MatBERT model on the solid state dataset using default parameters
+The folowing command will train the MatBERT-CNN model on the perovskite dataset using default parameters
 
 ```
-python train.py -dv gpu:0 -ds solid_state -ml matbert
+python train.py -dv gpu:0 -ds pero800 -ml matbert
 ```
 
 Additional parameters can be specified.
